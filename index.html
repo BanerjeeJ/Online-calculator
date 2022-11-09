@@ -11,6 +11,7 @@
     <div class="container">
       <div class="table-1">
         <table>
+          <form>
           <thead>
             <tr>
               <th class="enter-text" id="data" colspan="4">0</th>
@@ -18,33 +19,52 @@
           </thead>
           <tbody>
             <tr class="grey">
-              <td>+</td>
-              <td>-</td>
-              <td>*</td>
-              <td>/</td>
+              <td onclick="display(event)">+
+              </td>
+              <td onclick="display(event)">-
+              </td>
+              <td onclick="display(event)">*
+              </td>
+              <td onclick="display(event)">/
+              </td>
             </tr>
             <tr>
-              <td class="white">7</td>
-              <td class="white">8</td>
-              <td class="white">9</td>
-              <td class="pink" rowspan="4">=</td>
+              <td class="white" onclick="display(event)">7
+              </td>
+              <td class="white" onclick="display(event)">8
+              </td>
+              <td class="white" onclick="display(event)">9
+              </td>
+              <tr class="pink" onclick="equal()">=
+              </td>
             </tr>
             <tr>
-              <td class="white">4</td>
-              <td class="white">5</td>
-              <td class="white">6</td>
+              <td class="white" onclick="display(event)">4
+              </td>
+              <td class="white" onclick="display(event)">5
+              </td>
+              <td class="white" onclick="display(event)">6
+              </td>
             </tr>
             <tr>
-              <td class="white">1</td>
-              <td class="white">2</td>
-              <td class="white">3</td>
+              <td  class="white" onclick="display(event)">1
+              </td>
+              <td class="white" onclick="display(event)">2
+              </td>
+              <td class="white" onclick="display(event)">3
+              </td>
             </tr>
             <tr>
-              <td class="white">0</td>
-              <td class="white">.</td>
-              <td class="white">AC</td>
+              <td class="white" onclick="display(event)">0
+              </td>
+              <td class="white" onclick="display(event)">.
+              </td>
+              <td class="white" onclick="clear()">AC
+              </td>
             </tr>
           </tbody>
+          <script src="calc.js"></script>
+          </form>
         </table>
       </div>
     </div>
