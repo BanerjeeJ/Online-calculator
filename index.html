@@ -14,7 +14,7 @@
           <form>
             <thead>
               <tr>
-                <th class="enter-text" id="data" colspan="4">0</th>
+                <th class="enter-text" id="screen" colspan="4">0</th>
               </tr>
             </thead>
             <tbody>
@@ -30,7 +30,7 @@
                 <td class="white" onclick="display(event)">9</td>
                 <!--<td class="white" onclick="myFunction()">DEL
               </td>-->
-                <td class="pink" rowspan="4" onclick="equal()">=</td>
+                <td class="pink" rowspan="4" onclick="calculate(event)">=</td>
               </tr>
               <tr>
                 <td class="white" onclick="display(event)">4</td>
@@ -45,7 +45,7 @@
               <tr>
                 <td class="white" onclick="display(event)">0</td>
                 <td class="white" onclick="display(event)">.</td>
-                <td class="white" onclick="clear()">AC</td>
+                <td class="white" onclick="clearEquation(event)">AC</td>
               </tr>
             </tbody>
             <script src="calc.js"></script>
